@@ -31,7 +31,7 @@ while counter > 0:
     # return correct if the user guess equals computer guess
     if (guess == computer_guess):
         print(
-            f"You got it right! The answer was {computer_guess}. \nThe End. ")
+            f"You got it right! The number I was thinking of is {computer_guess}. \nThe End. ")
         break
     # display too high! if the user guess is higher than the computer guess
     elif (guess > computer_guess):
