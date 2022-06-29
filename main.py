@@ -7,7 +7,7 @@ print(logo)
 # display an introductory msg to the user
 print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100.")
 # prompt user to choose difficulty level
-difficulty = input("Choose a difficulty level. Type 'easy' or 'hard': ")
+difficulty = input("Choose a difficulty level. Type 'easy' or 'hard': ").lower()
 # prepare the number the user will guess and store in a variable
 computer_guess = random.randint(1, 100)
 # dependent on the difficulty level chosen, display the number of gusses available to the user
