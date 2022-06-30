@@ -37,7 +37,7 @@ while counter > 0:
     elif ((guess - computer_guess) > 20):
         print("Too high!")
     
-    elif ((guess - computer_guess) > 0 and (guess - computer_guess) =< 20):
+    elif ((guess - computer_guess) > 0 and (guess - computer_guess) <= 20):
           print ("\nClose, but you aren't there yet. Just a little readjustments and you could win this.")
           print ("Hint: Pick a lesser number")
     
@@ -56,3 +56,4 @@ while counter > 0:
         print(f"Guess again, you have {counter} attempts remaining. ")
     else:
         print("You have exhausted your attempts and you Lose!\nThe End. ")
+        print (f"{computer_guess} was the correct answer")
