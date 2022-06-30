@@ -34,11 +34,21 @@ while counter > 0:
             f"You got it right! The number I was thinking of is {computer_guess}. \nThe End. ")
         break
     # display too high! if the user guess is higher than the computer guess
-    elif (guess > computer_guess):
+    elif ((guess - computer_guess) > 20):
         print("Too high!")
+    
+    elif ((guess - computer_guess) > 0 and (guess - computer_guess) =< 20):
+          print ("\nClose, but you aren't there yet. Just a little readjustments and you could win this.")
+          print ("Hint: Pick a lesser number")
+    
     # display too low if the user guess is lower than the computer guess
-    elif (guess < computer_guess):
+    elif ((guess - computer_guess) < -20):
         print("Too low!")
+    
+    elif ((guess - computer_guess) < 0 and (guess - computer_guess) >= -20):
+        print ("\nClose, but you aren't there yet. Just a little readjustments and you could win this.")
+        print ("Hint: Pick a higher number")
+    
     else:
         print("Wrong input")
     # give feedback to the user
